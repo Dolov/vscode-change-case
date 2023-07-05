@@ -1,7 +1,7 @@
 {
-  "name": "vscode-change-case",
-  "displayName": "vscode-change-case",
-  "description": "文本大小写转换",
+  "name": "change-case",
+  "displayName": "change-case",
+  "description": "Convert the naming format of the selected text, supporting options for all uppercase, all lowercase, lowercase camel case, and uppercase camel case.",
   "publisher": "Dolov",
   "repository": "https://github.com/Dolov/vscode-npm-links",
   "version": "0.0.1",
