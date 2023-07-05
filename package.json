@@ -1,7 +1,9 @@
 {
-  "name": "vsocde-change-case",
-  "displayName": "vsocde-change-case",
-  "description": "",
+  "name": "vscode-change-case",
+  "displayName": "vscode-change-case",
+  "description": "文本大小写转换",
+  "publisher": "Dolov",
+  "repository": "https://github.com/Dolov/vscode-npm-links",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.79.0"
@@ -9,13 +11,60 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
+    "menus": {
+      "changeCase": [
+        {
+          "command": "vscode-change-case.uppercase",
+          "group": "1"
+        },
+        {
+          "command": "vscode-change-case.lowercase",
+          "group": "2"
+        },
+        {
+          "command": "vscode-change-case.lowerCamelCase",
+          "group": "3"
+        },
+        {
+          "command": "vscode-change-case.upperCamelCase",
+          "group": "4"
+        }
+      ],
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "submenu": "changeCase",
+          "group": "navigation"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "changeCase",
+        "label": "ChangeCase"
+      }
+    ],
     "commands": [
       {
-        "command": "vsocde-change-case.helloWorld",
-        "title": "Hello World"
+        "command": "vscode-change-case.uppercase",
+        "title": "全大写"
+      },
+      {
+        "command": "vscode-change-case.lowercase",
+        "title": "全小写"
+      },
+      {
+        "command": "vscode-change-case.lowerCamelCase",
+        "title": "小驼峰"
+      },
+      {
+        "command": "vscode-change-case.upperCamelCase",
+        "title": "大驼峰"
       }
     ]
   },
@@ -23,6 +72,7 @@
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
+    "start": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
