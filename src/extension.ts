@@ -15,13 +15,13 @@ export function activate(context: vscode.ExtensionContext) {
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
 
-	const uppercaseDisposable = vscode.commands.registerCommand('vscode-change-case.uppercase', handleUppercase);
+	const uppercaseDisposable = vscode.commands.registerCommand('change-case-next.uppercase', handleUppercase);
 
-	const lowercaseDisposable = vscode.commands.registerCommand('vscode-change-case.lowercase', handleLowercase);
+	const lowercaseDisposable = vscode.commands.registerCommand('change-case-next.lowercase', handleLowercase);
 
-	const lowerCamelCaseDisposable = vscode.commands.registerCommand('vscode-change-case.lowerCamelCase', handleLowerCamelCase);
+	const lowerCamelCaseDisposable = vscode.commands.registerCommand('change-case-next.lowerCamelCase', handleLowerCamelCase);
 
-	const upperCamelCaseDisposable = vscode.commands.registerCommand('vscode-change-case.upperCamelCase', handleUpperCamelCase);
+	const upperCamelCaseDisposable = vscode.commands.registerCommand('change-case-next.upperCamelCase', handleUpperCamelCase);
 
 	context.subscriptions.push(
 		uppercaseDisposable,

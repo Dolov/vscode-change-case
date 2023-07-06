@@ -15,23 +15,24 @@
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
+  "icon": "icon.png",
   "contributes": {
     "menus": {
       "changeCase": [
         {
-          "command": "vscode-change-case.uppercase",
+          "command": "change-case-next.uppercase",
           "group": "1"
         },
         {
-          "command": "vscode-change-case.lowercase",
+          "command": "change-case-next.lowercase",
           "group": "2"
         },
         {
-          "command": "vscode-change-case.lowerCamelCase",
+          "command": "change-case-next.lowerCamelCase",
           "group": "3"
         },
         {
-          "command": "vscode-change-case.upperCamelCase",
+          "command": "change-case-next.upperCamelCase",
           "group": "4"
         }
       ],
@@ -46,24 +47,24 @@
     "submenus": [
       {
         "id": "changeCase",
-        "label": "ChangeCase"
+        "label": "大小写转化"
       }
     ],
     "commands": [
       {
-        "command": "vscode-change-case.uppercase",
+        "command": "change-case-next.uppercase",
         "title": "全大写"
       },
       {
-        "command": "vscode-change-case.lowercase",
+        "command": "change-case-next.lowercase",
         "title": "全小写"
       },
       {
-        "command": "vscode-change-case.lowerCamelCase",
+        "command": "change-case-next.lowerCamelCase",
         "title": "小驼峰"
       },
       {
-        "command": "vscode-change-case.upperCamelCase",
+        "command": "change-case-next.upperCamelCase",
         "title": "大驼峰"
       }
     ]
