@@ -1,7 +1,7 @@
 {
   "name": "change-case-next",
   "displayName": "change-case-next",
-  "description": "Convert the naming format of the selected text, supporting options for all uppercase, all lowercase, lowercase camel case, and uppercase camel case.",
+  "description": "Convert the naming format of the selected text, supporting options for all uppercase, all lowercase, lowercamel case, and uppercamel case.",
   "publisher": "Dolov",
   "repository": "https://github.com/Dolov/vscode-change-case",
   "version": "0.0.3",
@@ -15,7 +15,7 @@
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
-  "icon": "icon.128.svg",
+  "icon": "icon.png",
   "contributes": {
     "menus": {
       "changeCase": [

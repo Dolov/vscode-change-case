@@ -1,16 +1,16 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="android" xmlns="http://www.w3.org/2000/svg" width="1024"
     height="1024" viewBox="0 0 1024 1024" class="w-12 h-12 sm:w-16 sm:h-16 inline-block">
     <defs>
-        <linearGradient id="bgGradient-dailymotion" x1="15%" y1="15%" x2="85%" y2="85%" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" style="stop-color: rgb(0, 102, 220); stop-opacity: 1;"></stop>
-            <stop offset="100%" style="stop-color: rgb(0, 190, 220); stop-opacity: 1;"></stop>
+        <linearGradient id="bgGradient-git" x1="15%" y1="15%" x2="85%" y2="85%" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" style="stop-color: rgb(255, 27, 107); stop-opacity: 1;"></stop>
+            <stop offset="100%" style="stop-color: rgb(69, 202, 255); stop-opacity: 1;"></stop>
         </linearGradient>
-        <linearGradient id="bgGradient-dailymotion" x1="15%" y1="15%" x2="85%" y2="85%" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" style="stop-color: rgb(0, 102, 220); stop-opacity: 1;"></stop>
-            <stop offset="100%" style="stop-color: rgb(0, 190, 220); stop-opacity: 1;"></stop>
+        <linearGradient id="bgGradient-git" x1="15%" y1="15%" x2="85%" y2="85%" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" style="stop-color: rgb(255, 27, 107); stop-opacity: 1;"></stop>
+            <stop offset="100%" style="stop-color: rgb(69, 202, 255); stop-opacity: 1;"></stop>
         </linearGradient>
     </defs>
-    <path fill="url(&quot;#bgGradient-dailymotion&quot;)"
+    <path fill="url(&quot;#bgGradient-git&quot;)"
         d="M844,1024H180C80.589,1024,0,943.411,0,844l0-664C0,80.589,80.589,0,180,0l664,0c99.411,0,180,80.589,180,180v664C1024,943.411,943.411,1024,844,1024z">
     </path>
     <g transform="translate(256, 256)">
