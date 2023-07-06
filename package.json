@@ -4,7 +4,7 @@
   "description": "Convert the naming format of the selected text, supporting options for all uppercase, all lowercase, lowercase camel case, and uppercase camel case.",
   "publisher": "Dolov",
   "repository": "https://github.com/Dolov/vscode-change-case",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.79.0"
   },
