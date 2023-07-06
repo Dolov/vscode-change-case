@@ -15,7 +15,7 @@
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
-  "icon": "icon.png",
+  "icon": "icon.128.svg",
   "contributes": {
     "menus": {
       "changeCase": [
