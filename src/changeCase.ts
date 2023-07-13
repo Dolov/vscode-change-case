@@ -22,7 +22,9 @@ const replaceText = (replaceText: string) => {
 const handleUppercase = () => {
 	const text = getSelectedText();
 	if (!text) return;
-	const upperText = text.toUpperCase();
+	const upperText = text
+		.replace(/[A-Z]/g, (match) => `_${match}`)
+		.toUpperCase();
 	replaceText(upperText);
 };
 
@@ -36,21 +38,21 @@ const handleLowercase = () => {
 const handleLowerCamelCase = () => {
 	const text = getSelectedText();
 	if (!text) return;
-	const upperCamelCaseText = text
+	const lowerCamelCaseText = text
 		.replace(/-|_(\w)/g, (_, c) => c ? c.toUpperCase() : '')
 		.replace(/^\w/, c => c.toLowerCase());
 
-	replaceText(upperCamelCaseText);
+	replaceText(lowerCamelCaseText);
 };
 
 const handleUpperCamelCase = () => {
 	const text = getSelectedText();
 	if (!text) return;
-	const lowerCamelCaseText = text
+	const upperCamelCaseText = text
 		.replace(/-|_(\w)/g, (_, c) => c ? c.toUpperCase() : '')
 		.replace(/^\w/, c => c.toUpperCase());
 
-	replaceText(lowerCamelCaseText);
+	replaceText(upperCamelCaseText);
 };
 
 export {
